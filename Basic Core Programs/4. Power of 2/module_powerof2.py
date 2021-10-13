@@ -1,9 +1,9 @@
 '''
 @Author: Amit Shendge
-@Date: 13-10-2021 08:40AM
+@Date: 13-10-2021 07:40PM
 @Last Modified by: Amit Shendge
-@Last Modified time: 13-10-2021 08:40AM
-@Title : Leap Year or Not a Leap Year
+@Last Modified time: 13-10-2021 07:40PM
+@Title : Power of 2 List of numbers
 '''
 
 var_number = int(input('Enter the Number : '))

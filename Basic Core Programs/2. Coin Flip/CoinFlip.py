@@ -2,8 +2,8 @@
 @Author: Amit Shendge
 @Date: 12-10-2021 09:34PM
 @Last Modified by: Amit Shendge
-@Last Modified time: 12-10-2021 09:34PM
-@Title : User Input Demonstartion
+@Last Modified time: 13-10-2021 08:50PM
+@Title : Coin Flip program using Random function
 '''
 
 import random

@@ -39,9 +39,10 @@ def function_couponGenerator(total_coupons):
     return count
 
 
-text = 'How many Unique Coupon codes you want to Generate : '
-var_numberOfCoupons = function_intInput(text)
-randoms = function_couponGenerator(var_numberOfCoupons)
+if __name__ == '__main__':
+    text = 'How many Unique Coupon codes you want to Generate : '
+    var_numberOfCoupons = function_intInput(text)
+    randoms = function_couponGenerator(var_numberOfCoupons)
 
-print(result_list)
-print('Total ', randoms , ' random numbers needed to generate unique coupons')
+    print(result_list)
+    print('Total ', randoms , ' random numbers needed to generate unique coupons')

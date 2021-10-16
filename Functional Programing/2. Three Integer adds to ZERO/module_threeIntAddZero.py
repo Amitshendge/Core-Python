@@ -23,16 +23,6 @@ Return:
             continue
 
 
-var_arr = []
-result_arr = []
-
-a = 'How many Number you want to Enter : '
-var_number = function_intInput(a)
-for i in range(var_number):
-    a = 'Enter Number : '
-    var_arr.append(function_intInput(a))
-n = len(var_arr)
-
 def function_Triplets(arr, n):
     """
 Description:
@@ -57,6 +47,16 @@ Return:
     else:
         return result_arr
 
+if __name__ == '__main__':
+    var_arr = []
+    result_arr = []
 
-print(function_Triplets(var_arr,n))
+    a = 'How many Number you want to Enter : '
+    var_number = function_intInput(a)
+    for i in range(var_number):
+        a = 'Enter Number : '
+        var_arr.append(function_intInput(a))
+    n = len(var_arr)
+
+    print(function_Triplets(var_arr,n))
  

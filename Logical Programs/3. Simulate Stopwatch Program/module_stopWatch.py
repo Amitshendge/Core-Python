@@ -62,7 +62,8 @@ Return:
             print('Plz enter stop to stop StopWatch')
 
 
-strat_time = function_stratStopWatch()
-end_time = function_stopStopWatch()
+if __name__ == '__main__':
+    strat_time = function_stratStopWatch()
+    end_time = function_stopStopWatch()
 
-print('Time escalaped : ' ,round(end_time-strat_time,2), ' sec')
+    print('Time escalaped : ' ,round(end_time-strat_time,2), ' sec')

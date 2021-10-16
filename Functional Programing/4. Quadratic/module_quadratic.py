@@ -46,14 +46,15 @@ Return:
     return result_arr
 
 
-print('Quadratic eqn in form : a*x*x + b*x + c = 0')
-aa = 'Enter value of a : '
-a = function_intInput(aa)
-aa = 'Enter value of b : '
-b = function_intInput(aa)
-aa = 'Enter value of c : '
-c = function_intInput(aa)
+if __name__ == '__main__':
+    print('Quadratic eqn in form : a*x*x + b*x + c = 0')
+    var_txt = 'Enter value of a : '
+    a = function_intInput(var_txt)
+    var_txt = 'Enter value of b : '
+    b = function_intInput(var_txt)
+    var_txt = 'Enter value of c : '
+    c = function_intInput(var_txt)
 
-delta = abs((b*b) - (4*a*c))
+    delta = abs((b*b) - (4*a*c))
 
-print('Roots are : ' + str(function_roots(a,b,c,delta)))
+    print('Roots are : ' + str(function_roots(a,b,c,delta)))

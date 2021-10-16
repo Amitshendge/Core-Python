@@ -23,12 +23,6 @@ Return:
             continue
 
 
-a = 'Enter Column length : '
-var_col = function_intInput(a)
-a = 'Enter Row length : '
-var_row = function_intInput(a)
-
-
 def function_List(col,row):
     """
 Description:
@@ -49,4 +43,11 @@ Return:
     return var_arr
 
 
-print(function_List(var_col,var_row))
+if __name__ == '__main__':
+    a = 'Enter Column length : '
+    var_col = function_intInput(a)
+    a = 'Enter Row length : '
+    var_row = function_intInput(a)
+
+
+    print(function_List(var_col,var_row))

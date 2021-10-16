@@ -37,20 +37,22 @@ Return:
 """
     return 35.74 + (0.6215*t) + (0.4275*t - 35.75)*(v**0.16)
 
-while True:
-    a = 'Enter value of temperature "t" (in Fahrenheit) : '
-    t = function_intInput(a)
-    if t <50 and t > 0 :
-        break
-    else:
-        print('Keep it in range of 0 < t < 50')
 
-while True:
-    a = 'Enter value of wind speed v (in miles per hour) : '
-    v = function_intInput(a)
-    if v < 120 and v > 3 :
-        break
-    else:
-        print('Keep it in range of 3 < v < 120')
+if __name__ == '__main__':
+    while True:
+        a = 'Enter value of temperature "t" (in Fahrenheit) : '
+        t = function_intInput(a)
+        if t <50 and t > 0 :
+            break
+        else:
+            print('Keep it in range of 0 < t < 50')
 
-print('Wind Chill : ' + str(function_windchill(t,v)))
+    while True:
+        a = 'Enter value of wind speed v (in miles per hour) : '
+        v = function_intInput(a)
+        if v < 120 and v > 3 :
+            break
+        else:
+            print('Keep it in range of 3 < v < 120')
+
+    print('Wind Chill : ' + str(function_windchill(t,v)))

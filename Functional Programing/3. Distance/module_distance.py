@@ -35,10 +35,11 @@ Return:
 """
     return (math.sqrt((x*x) + (y*y)))
 
+if __name__ == '__main__':
 
-a='Enter x : '
-x = function_intInput(a)
-a='Enter y : '
-y = function_intInput(a)
+    a='Enter x : '
+    x = function_intInput(a)
+    a='Enter y : '
+    y = function_intInput(a)
 
-print(function_distance(x,y))
+    print(function_distance(x,y))

@@ -29,8 +29,6 @@ Return:
 import random
 board = []
 ins = []
-for i in range(9):
-    board.append('-')
 
 
 def function_print():
@@ -120,24 +118,28 @@ Return:
         return True
 
 
-function_print()
+if __name__ == '__main__':
+    for i in range(9):
+        board.append('-')
 
-for num in range(9):
-    if num%2==0:
-        function_ourPlay()
-        function_print()
-        if function_is_win():
-            print('You Won Congrats !!!')
-            break
+    function_print()
 
+    for num in range(9):
+        if num%2==0:
+            function_ourPlay()
+            function_print()
+            if function_is_win():
+                print('You Won Congrats !!!')
+                break
+
+        else:
+            function_pcPlay()
+            function_print()
+            if function_is_win():
+                print('CPU Won !!!')
+                break
+
+    if function_is_win():
+        print('Thank You for Playing')
     else:
-        function_pcPlay()
-        function_print()
-        if function_is_win():
-            print('CPU Won !!!')
-            break
-
-if function_is_win():
-    print('You won Thank You for Playing')
-else:
-    print('Game Tied !!!')
+        print('Game Tied !!!')

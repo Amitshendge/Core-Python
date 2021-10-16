@@ -58,4 +58,5 @@ Return:
         return ('Congrats You reached your goal in ' + str(n) + ' plays')
 
 
-print(function_gambling(var_stakes,var_goal))
+if __name__ == '__main__':
+    print(function_gambling(var_stakes,var_goal))

@@ -26,7 +26,7 @@ class class_Inventory:
 
 
     @classmethod
-    def from_json_to_obj(cls, json_string):
+    def function_from_json_to_obj(cls, json_string):
         """
     Description:
         Function is used to create an object of Inventory from json input
@@ -51,7 +51,7 @@ class class_Inventory:
         return self.name
 
 
-    def total_value(list_inventory):
+    def function_total_value(list_inventory):
         """
     Description:
         Function is used to calculate total inventory value in Ruppes
@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
     with open('my_JSON.json','r') as json_file:
         json_data = json.loads(json_file.read())
-        for u in json_data:
-            list_inventory.append(class_Inventory(**u))
+        for item in json_data:
+            list_inventory.append(class_Inventory(**item))
 
-    print((class_Inventory.total_value(list_inventory)), 'Rupees')
+    print('Total Value of Inventory is : ',(class_Inventory.function_total_value(list_inventory)), 'Rupees')

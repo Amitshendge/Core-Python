@@ -1,0 +1,38 @@
+[
+	{
+		"type": "Rice",
+		"name": "Wadakolam",
+		"weight": 145,
+		"rate": 39
+	},
+	{
+		"type": "Rice",
+		"name": "Basmati",
+		"weight": 165,
+		"rate": 55
+	},
+	{
+		"type": "Wheat",
+		"name": "Number1",
+		"weight": 101,
+		"rate": 64
+	},
+	{
+		"type": "Wheat",
+		"name": "Number2",
+		"weight": 162,
+		"rate": 43
+	},
+	{
+		"type": "Pulses",
+		"name": "Kidney Beans",
+		"weight": 130,
+		"rate": 34
+	},
+	{
+		"type": "Pulses",
+		"name": "Butter Beans",
+		"weight": 123,
+		"rate": 32
+	}
+]

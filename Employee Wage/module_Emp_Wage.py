@@ -70,12 +70,23 @@ class Employee:
         else:
             print('Employee wage of the month will be : ',(Employee.static_var_PartWagePerHr * Employee.static_var_PartDayHr * Employee.static_var_DaysInMonth),'$')
 
+    def emp_Monthlywage_new(self):
+        """
+        Description:
+            Function is used generate month wages made by employee as part or full time
+        Parameter:
+            self object is passed
+        Return:
+            doesn't returns anything but prints daily wages as part or full time
+        """
+        print('For part time worker 20 day wages will be ', (Employee.static_var_PartWagePerHr * Employee.static_var_PartDayHr * Employee.static_var_DaysInMonth),'$')
+        print('While For Full time worker 100hrs wages will be ',(Employee.static_var_WagePerHr * 100),'$')
 
 
 if __name__ == '__main__':
 
     emp1=None
-    print('1.Create Employee Object Manually\n2.Create Default Employee Object\n3. Check Employee is Present or Not\n4.Daily wages made by Employee\n5. Check How much Employee can make in Month\n6. Exit')
+    print('1.Create Employee Object Manually\n2.Create Default Employee Object\n3. Check Employee is Present or Not\n4.Daily wages made by Employee\n5. Check How much Employee can make in Month\n6. Till reached limit\n7. Exit')
     while True:
         a = int(input('Enter 1-6 : '))
         match a:
@@ -115,6 +126,9 @@ if __name__ == '__main__':
                     emp1.emp_Monthlywage()
             
             case 6:
+                emp1.emp_Monthlywage_new()
+            
+            case 7:
                 print('Thank you for your Time..')
                 break
             

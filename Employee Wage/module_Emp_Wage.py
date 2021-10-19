@@ -52,6 +52,44 @@ class Employee:
     
 
 if __name__ == '__main__':
-    emp1 = Employee(part_time=True)
-    emp1.emp_present()
-    emp1.daily_emp_wage()
+
+    emp1=None
+    print('1.Create Employee Object Manually\n2.Create Default Employee Object\n3. Check Employee is Present or Not\n4.Daily wages made by Employee\n5. Exit\n')
+    while True:
+        a = int(input('Enter 1-5 : '))
+        match a:
+            case 1:
+                emp1 = Employee()
+                user_input = input("User Present True or False? : ")
+                if user_input == ("True"):
+                    emp1.present = True
+                    user_input = input("User Part-Time Employee True or False? : ")
+                    if user_input == ("True"):
+                        emp1.part_time = True
+            
+            case 2:
+                emp1 = Employee()
+                emp1.emp_present()
+            
+            case 3:
+                if emp1 == None:
+                    print('Create Employee object first')
+                else:
+                    if emp1.present :
+                        print('Employee is Present')
+                    else:
+                        print('Employee is Absent')
+
+            
+            case 4:
+                if emp1 == None:
+                    print('Create Employee object first')
+                else:
+                    emp1.daily_emp_wage()
+
+            case 5:
+                print('Thank you for your Time..')
+                break
+            
+            case _:
+                print('Option not available plz try again')

@@ -86,9 +86,9 @@ class Employee:
 if __name__ == '__main__':
 
     emp1=None
-    print('1.Create Employee Object Manually\n2.Create Default Employee Object\n3. Check Employee is Present or Not\n4.Daily wages made by Employee\n5. Check How much Employee can make in Month\n6. Till reached limit\n7. Exit')
+    print('1.Create Employee Object Manually\n2.Create Default Employee Object\n3. Check Employee is Present or Not\n4.Daily wages made by Employee\n5. Check How much Employee can make in Month\n6. Till reached limit\n7. Get work hrs\n8. Exit')
     while True:
-        a = int(input('Enter 1-6 : '))
+        a = int(input('Enter 1-8 : '))
         match a:
             case 1:
                 emp1 = Employee()
@@ -129,6 +129,10 @@ if __name__ == '__main__':
                 emp1.emp_Monthlywage_new()
             
             case 7:
+                user_value = int(input('Enter total working days : '))
+                print('Total working hrs will be : ',(user_value * 8))
+            
+            case 8:
                 print('Thank you for your Time..')
                 break
             

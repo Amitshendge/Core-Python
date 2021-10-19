@@ -79,6 +79,30 @@ class class_Inventory:
             print('total value of ', item.name ,' is : ', (item.weight * item.rate))
 
 
+    def function_catagory_value(list_inventory):
+        """
+    Description:
+        Function is used to calculate total value of same category item in inventory in Ruppes
+    Parameter:
+        list of inventory objects
+    Return:
+        sum of cost of all the present items in inventory category wise
+    """
+        rice_value = 0
+        pulses_value = 0
+        wheat_value = 0
+        for item in list_inventory:
+            if item.type == 'Rice':
+                rice_value = rice_value + (item.weight * item.rate)
+            elif item.type == 'Pulses':
+                pulses_value = pulses_value + (item.weight * item.rate)
+            elif item.type == 'Wheat':
+                wheat_value = wheat_value + (item.weight * item.rate)
+        print('total value of Rice is : ', rice_value)
+        print('total value of Pulses is : ', pulses_value)
+        print('total value of Wheat is : ', wheat_value)
+
+
     def function_toJSON(list_inventory):
         """
     Description:
@@ -104,6 +128,8 @@ if __name__ == "__main__":
             list_inventory.append(class_Inventory(**u))
 
     class_Inventory.function_each_value(list_inventory)
+    print()
     print('Total value of whole Inventory is : ',(class_Inventory.function_total_value(list_inventory)), 'Rupees')
     print()
-    class_Inventory.function_toJSON(list_inventory)
+    class_Inventory.function_catagory_value(list_inventory)
+    # class_Inventory.function_toJSON(list_inventory)
